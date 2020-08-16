@@ -8,6 +8,9 @@ $pacificoFont: 'Pacifico', cursive;
 /*-------------------------
 Fonts
 -------------------------*/
-$primaryFont: $montserratFont;
-$secondaryFont: $pacificoFont;
-$tertiaryFont: $josefinFont;
+
+$fonts: (
+    "primary": $montserratFont,
+    "secondary": $pacificoFont,
+    "tertiary": $josefinFont
+);

@@ -16,6 +16,6 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: $primaryFont;
-    color: $tertiaryColor;
+    font-family: map-get($fonts, "primary");
+    color: map-get($colors, "tertiary");
 }

@@ -1,14 +1,14 @@
 header {
-    background-color: $secondaryColor;
+    background-color: map-get($colors, "secondary");
 }
 
 .navbar-brand {
-    font-family: $secondaryFont;
-    font-size: 30px;
-    color: $primaryColor;
+    font-family: map-get($fonts, "secondary");
+    font-size: 3rem;
+    color: map-get($colors, "primary");
     &:hover,
     &:focus {
-        color: $primaryColor;
+        color: map-get($colors, "primary");
     }
 }
 
@@ -20,12 +20,12 @@ header {
     position: absolute;
     top: 5rem;
     left: -2rem;
-    background-color: $primaryColor;
+    background-color: map-get($colors, "primary");
     z-index: 3;
     padding: 2rem 1rem;
     width: 20%;
     border-radius: 17px;
-    box-shadow: 0 0 12px 0 rgba($blackColor, .4);
+    box-shadow: 0 0 12px 0 rgba(map-get($colors, "black"), .4);
     display: none;
 }
 
