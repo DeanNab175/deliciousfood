@@ -1,15 +1,23 @@
 /*-------------------------
-Helper styles
+Abstracts styles
 -------------------------*/
-@import 'helpers/variables';
+@import 'abstracts/variables';
 
 /*-------------------------
 Global styles
 -------------------------*/
-@import 'global';
+@import 'base/base';
 
 /*-------------------------
 Components styles
 -------------------------*/
-@import 'components/header';
 @import 'components/carousel';
+
+/*-------------------------
+Layout styles
+-------------------------*/
+@import 'layout/header';
+
+/*-------------------------
+Pages styles
+-------------------------*/

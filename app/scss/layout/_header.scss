@@ -4,6 +4,12 @@ header {
 
 .navbar-brand {
     font-family: $secondaryFont;
+    font-size: 30px;
+    color: $primaryColor;
+    &:hover,
+    &:focus {
+        color: $primaryColor;
+    }
 }
 
 .hamburger-menu {
@@ -21,4 +27,23 @@ header {
     border-radius: 17px;
     box-shadow: 0 0 12px 0 rgba($blackColor, .4);
     display: none;
+}
+
+.contacts {
+    span {
+        font-size: 1.4rem;
+        line-height: 1;
+        margin: 0 1rem 0 0;
+
+        i {
+            margin: 0 1rem 0 0;
+        }
+    }
+}
+
+.reserve_table {
+    a.btn {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
 }

@@ -1,14 +1,14 @@
 
-$(function(){
-    console.log("test");
+(function($){
     //$('.carousel').carousel();
     $(".owl-carousel").owlCarousel({
         items: 1,
-        autoplay: false,
-        loop: false,
-        nav: true
+        autoplay: true,
+        loop: true
+        //autoWidth: true
+        //nav: true
     });
-});
+})(jQuery);
 
 showMainMenu();
 
