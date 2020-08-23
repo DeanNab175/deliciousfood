@@ -1,14 +1,14 @@
 header {
-    background-color: map-get($colors, "secondary");
+    background-color: getColor("secondary");
 }
 
 .navbar-brand {
-    font-family: map-get($fonts, "secondary");
-    font-size: 3rem;
-    color: map-get($colors, "primary");
+    font-family: getFont("secondary");
+    font-size: getFontSize("xl");
+    color: getColor();
     &:hover,
     &:focus {
-        color: map-get($colors, "primary");
+        color: getColor();
     }
 }
 
@@ -19,19 +19,25 @@ header {
 .main-menu-nav {
     position: absolute;
     top: 5rem;
-    left: -2rem;
-    background-color: map-get($colors, "primary");
+    right: 0;
+    background-color: getColor();
     z-index: 3;
     padding: 2rem 1rem;
     width: 20%;
     border-radius: 17px;
-    box-shadow: 0 0 12px 0 rgba(map-get($colors, "black"), .4);
+    box-shadow: 0 0 12px 0 rgba(getColor("black"), .4);
     display: none;
+
+    .nav-link {
+        color: getColor("dark-green");
+        font-size: getFontSize("l");
+        line-height: 1;
+    }
 }
 
 .contacts {
     span {
-        font-size: 1.4rem;
+        font-size: getFontSize("sm");
         line-height: 1;
         margin: 0 1rem 0 0;
 
@@ -43,7 +49,7 @@ header {
 
 .reserve_table {
     a.btn {
-        font-size: 1.2rem;
+        font-size: getFontSize("xs");
         line-height: 1;
     }
 }

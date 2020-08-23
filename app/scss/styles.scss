@@ -1,6 +1,8 @@
 /*-------------------------
 Abstracts styles
 -------------------------*/
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
 @import 'abstracts/variables';
 
 /*-------------------------
@@ -11,6 +13,7 @@ Global styles
 /*-------------------------
 Components styles
 -------------------------*/
+@import 'components/button';
 @import 'components/carousel';
 
 /*-------------------------

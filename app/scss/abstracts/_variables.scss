@@ -7,3 +7,13 @@ Fonts
 Colors
 -------------------------*/
 @import 'abstracts/colors';
+
+/*-------------------------
+Bootstrap Variables Overrides
+-------------------------*/
+@import 'abstracts/bootstrap_overrides';
+
+/*-------------------------
+Bootstrap Sass Imports
+-------------------------*/
+@import "node_modules/bootstrap/scss/bootstrap";
