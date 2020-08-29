@@ -14,29 +14,42 @@
 toggleMainMenu();
 
 function toggleMainMenu() {
-    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const hamburgerBtn = document.querySelector('.hamburger__btn');
     const mainMenu = document.querySelector('#main-menu-nav');
     const animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
     let show = false;
-    let effect = 'animate__zoomIn';
+    let effectIn = 'animate__zoomIn';
+    let effectOut = 'animate__zoomOut';
     
     hamburgerBtn.addEventListener('click', () => {
         if(!show) {
             mainMenu.style.display = 'block';
-            mainMenu.classList.add(effect);
+            mainMenu.classList.add(effectIn);
 
             // On animation END state remove the class
             mainMenu.addEventListener(animationEndEvent, () => {
-                mainMenu.classList.remove(effect);
+                mainMenu.classList.remove(effectIn);
+                console.log("In");
             });
+
+            if( mainMenu.classList.contains(effectOut) ) {
+                mainMenu.classList.remove(effectOut);
+            }
             
             show = true;
             
         } else {
+            mainMenu.classList.add(effectOut);
             mainMenu.style.display = 'none';
+            
+            // On animation END state remove the class
+            mainMenu.addEventListener(animationEndEvent, () => {
+                mainMenu.classList.remove(effectOut);
+                console.log("Out");
+            });
 
-            if( mainMenu.classList.contains(effect) ) {
-                mainMenu.classList.remove(effect);
+            if( mainMenu.classList.contains(effectIn) ) {
+                mainMenu.classList.remove(effectIn);
             }
 
             show = false;

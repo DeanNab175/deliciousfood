@@ -12,28 +12,6 @@ header {
     }
 }
 
-.hamburger-menu {
-    position: relative;
-}
-
-.main-menu-nav {
-    position: absolute;
-    top: 5rem;
-    right: 0;
-    background-color: getColor();
-    z-index: 3;
-    padding: 2rem 1rem;
-    width: 20%;
-    border-radius: 17px;
-    box-shadow: 0 0 12px 0 rgba(getColor("black"), .4);
-    display: none;
-
-    .nav-link {
-        color: getColor("dark-green");
-        font-size: getFontSize("l");
-        line-height: 1;
-    }
-}
 
 .contacts {
     span {
@@ -51,5 +29,12 @@ header {
     a.btn {
         font-size: getFontSize("xs");
         line-height: 1;
+    }
+}
+
+.user-cta {
+    &__btn {
+        font-size: 1.7rem;
+        border-radius: 0;
     }
 }

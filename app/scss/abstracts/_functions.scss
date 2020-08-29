@@ -27,3 +27,12 @@ font weight
 @function getFontWeight($key: "regular") {
     @return map-get($fontWeight, $key);
 }
+
+/*-------------------------
+Calculate letter spacing
+from photoshop letter tracking
+y = (x / 1000) * 1em
+-------------------------*/
+@function calcLetterSpacing($unit) {
+    @return ($unit / 1000) * 1em;
+}

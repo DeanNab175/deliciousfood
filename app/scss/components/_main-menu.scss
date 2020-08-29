@@ -1,0 +1,76 @@
+.hamburger {
+
+    &__btn {
+        border-radius: 0;
+    }
+
+    &__toggler-icon {
+        width: 4rem;
+        height: 2.5rem;
+        position: relative;
+        display: block;
+
+        .bar {
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background-color: getColor("black");
+            right: 0;
+            border-radius: 15px;
+
+            &:first-of-type {
+                top: 0;
+                width: 45%;
+            }
+
+            &:nth-of-type(2) {
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 80%;
+            }
+
+            &:last-of-type {
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.main-menu-nav {
+    position: absolute;
+    top: 8rem;
+    left: -4rem;
+    background-color: getColor();
+    z-index: 3;
+    padding: 2rem 1.5rem 5rem;
+    width: 23%;
+    border-radius: 17px;
+    box-shadow: 0 0 12px 0 rgba(getColor("black"), .4);
+    display: none;
+
+    .nav-item {
+        border-bottom: 1px solid rgba(getColor("dark-green"), .4);
+
+        &.active {
+            .nav-link {
+                color: getColor("white");
+                font-weight: getFontWeight("semi-bold");
+            }
+        }
+    }
+
+    .nav-link {
+        color: getColor("dark-green");
+        font-size: getFontSize("l");
+        line-height: 1;
+        letter-spacing: calcLetterSpacing(75);
+        padding: 1.5rem;
+        transition: background-color .1s ease-in-out;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(getColor("white"), .1);
+        } 
+    }
+}
